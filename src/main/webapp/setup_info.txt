@@ -1,0 +1,27 @@
+The following set up are required to run this project in your local machine:
+
+1. Install Maven.
+2. Install Tomcat.
+3. Install MySQL.
+
+Create the following table in the MySQL database under the "test" schema:
+
+CREATE TABLE test_user(
+user_id INT NOT NULL AUTO_INCREMENT,
+email_id VARCHAR(50) NOT NULL,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+passwords VARCHAR(50) NOT NULL,
+PRIMARY KEY (user_id)
+);
+
+Insert some records for the above table.
+
+Example:
+--------
+
+INSERT INTO test_user (user_id,email_id, first_name, last_name, passwords)
+VALUES (1,'dspandiyan@gmail.com','Saravana','Pandiyan','dspandiyan@123');
+
+Note: In the code level am taking the "email_id" as an username, so this should be unique else at the runtime the application will throw
+an error.
