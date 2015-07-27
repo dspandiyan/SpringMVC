@@ -1,4 +1,4 @@
-Feature: Login Test To allow the customer to login
+Feature: Sample feature to test the reports outlook
 
 Scenario: Authenticate the user and allow him to access the home page of the application
 
