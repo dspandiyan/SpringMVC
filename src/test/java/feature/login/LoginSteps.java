@@ -17,14 +17,10 @@ public class LoginSteps {
 	public void setCredential(String userName, String pswd){
 		username = userName;
 		password = pswd;
-		System.out.println("Username retrived from feature file ----------------------->"+userName);
-		System.out.println("Password retrived from feature file ----------------------->"+pswd);
 	}
 	
 	@When("username '(.+)' and password '(.+)'")
 	public void checkCredentials(String userName, String pswd){
-		System.out.println("Username retrived from feature file ----------------------->"+userName);
-		System.out.println("Password retrived from feature file ----------------------->"+pswd);
 		if(userName.equals(username) && pswd.equals(password)){
 			isValidCredential = "correct";
 		}
