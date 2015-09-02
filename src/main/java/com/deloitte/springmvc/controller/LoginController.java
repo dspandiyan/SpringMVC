@@ -31,7 +31,7 @@ public class LoginController {
 	 * This method does the login check part, if the username and password matches, it returns the home page, else it returns the invalid login page with proper error message.
 	 */
 	@RequestMapping(value="/loginCheck", method = RequestMethod.POST)
-	public ModelAndView checkLogin(HttpServletRequest request){
+	public ModelAnView checkLogin(HttpServletRequest request){
 		// Read the username and password entered by user.
 		String userName = request.getParameter("emailId");
 		String password = request.getParameter("password");
